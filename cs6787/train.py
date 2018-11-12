@@ -2,31 +2,35 @@
 
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 import torch.optim as optim
 import torch.utils.data as data
 from torch.autograd import Variable
-from torchvision import datasets, transforms
 
-import numpy as np
 from tqdm import tqdm
-import time
 
 from cs6787.model import MLP
+from cs6787.load_data import NoaaDataset
 
 
 def train(args):
     kwargs = {'num_workers': 2, 'pin_memory': True} if args.cuda else {}
-    train_loader = data.DataLoader(
-        datasets.MNIST('./data', train=True, download=True,
-                       transform=transforms.Compose([transforms.ToTensor(), invert])),
-                       batch_size=args.batch_size, shuffle=True, **kwargs)
-    test_loader = data.DataLoader(
-        datasets.MNIST('./data', train=False,
-                       transform=transforms.Compose([transforms.ToTensor(), invert])),
-                       batch_size=args.test_batch_size, shuffle=True, **kwargs)
+    predicted_features = args.predicted_features.split(',')
 
-    net = MLP(args.in_features, args.out_features)
+    train_set = NoaaDataset(
+        root=args.data, stage='train', predicted_features=predicted_features,
+        include_invalid=args.include_invalid)
+    train_loader = data.DataLoader(
+        train_set, batch_size=args.batch_size, shuffle=True, **kwargs)
+
+    test_stage = 'test' if args.test else 'val'
+    test_set = NoaaDataset(
+        root=args.data, stage=test_stage,
+        predicted_features=predicted_features,
+        include_invalid=args.include_invalid)
+    test_loader = data.DataLoader(
+        test_set, batch_size=args.batch_size, shuffle=True, **kwargs)
+
+    net = MLP(train_set.x.shape[1], train_set.y.shape[1])
     print(net)
 
     if args.cuda:
@@ -35,55 +39,59 @@ def train(args):
     optimizer = optim.Adam(net.parameters(), lr=args.lr)
     decay = (0.000003 / args.lr) ** (1. / args.epochs)
     scheduler = optim.lr_scheduler.ExponentialLR(optimizer, decay)
-    creterion = nn.MultiMarginLoss()
+    criterion = nn.MSELoss()
 
-    test_epoch(net, creterion, test_loader, args)
+    test_epoch(net, criterion, test_loader, args)
     for epoch in range(1, args.epochs+1):
         scheduler.step(epoch - 1)
-        tr_loss, tr_acc = train_epoch(epoch, net, creterion, optimizer, train_loader, args)
-        tt_loss, tt_acc = test_epoch(net, creterion, test_loader, args)
+        tr_loss, tr_acc = train_epoch(
+            epoch, net, criterion, optimizer, train_loader, args)
+        tt_loss, tt_acc = test_epoch(
+            net, criterion, test_loader, args)
 
-def train_epoch(epoch, net, creterion, optimizer, train_loader, args, valid_data=None):
+
+def train_epoch(epoch, net, criterion, optimizer, train_loader, args):
     losses = 0
     accs = 0
     net.train()
+
     for batch_idx, (data, target) in enumerate(tqdm(train_loader), 1):
         if args.cuda:
             data, target = data.cuda(), target.cuda()
-        data, target = Variable(data.view(args.batch_size, -1)), Variable(target)
+        data, target = Variable(data), Variable(target)
 
         optimizer.zero_grad()
 
         output = net(data)
-        loss = creterion(output, target)
+        loss = criterion(output, target)
         loss.backward()
         optimizer.step()
-        weight_clip(net.parameters())
 
-        y_pred = torch.max(output, 1)[1]
-        accs += (torch.mean((y_pred == target).float())).data[0]
+        accs += (torch.mean((output - target) ** 2) ** .5).data.item()
 
-        losses += loss.data[0]
-    print("Epoch {0}: Train Loss={1:.3f}, Train Accuracy={2:.3f}".format(epoch, losses / batch_idx, accs / batch_idx))
+        losses += loss.data.item()
+    print("Epoch {0}: Train Loss={1:.3f}, Train Accuracy={2:.3f}".format(
+        epoch, losses / batch_idx, accs / batch_idx))
 
     return losses / batch_idx, accs / batch_idx
 
-def test_epoch(net, creterion, test_loader, args):
+
+def test_epoch(net, criterion, test_loader, args):
     net.eval()
     losses = 0
     accs = 0
+
     for batch_idx, (data, target) in enumerate(test_loader, 1):
         if args.cuda:
             data, target = data.cuda(), target.cuda()
-        data, target = Variable(data.view(args.test_batch_size, -1)), Variable(target)
+        data, target = Variable(data), Variable(target)
 
         output = net(data)
-        loss = creterion(output, target)
+        loss = criterion(output, target)
 
-        y_pred = torch.max(output, 1)[1]
-        accs += (torch.mean((y_pred == target).float())).data[0]
+        accs += (torch.mean((output - target) ** 2) ** .5).data.item()
 
-        losses += loss.data[0]
-    print("\tTest Loss={0:.3f}, Test Accuracy={1:.3f}".format(losses / batch_idx, accs / batch_idx))
+        losses += loss.data.item()
+    print("\tTest Loss={0:.3f}, Test Accuracy={1:.3f}".format(
+        losses / batch_idx, accs / batch_idx))
     return losses / batch_idx, accs / batch_idx
-
