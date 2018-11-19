@@ -24,13 +24,26 @@ class NoaaDataset(data.Dataset):
 
     stage_indices = []
 
+    day = 0
+
+    days = []
+
+    total_size = 0
+
     def __init__(
             self, root, stage, predicted_features, data_split=(.8, .1, .1),
-            split_fname='split.npz', include_invalid=False, **kwargs):
+            split_fname='split.npz', include_invalid=False, epoch_days=0,
+            warm_epoch_days=0, randomize_samples=False, rotate_data=False,
+            **kwargs):
         super(NoaaDataset, self).__init__(**kwargs)
         self.root = root
         self.load_all_hourly_data()
         self.split_data(stage, data_split, split_fname)
+
+        if randomize_samples:
+            times = self.data[:, 0].copy()
+            np.random.shuffle(times)
+            self.data[:, 0] = times
 
         pred_indices = [self.header.index(name) for name in predicted_features]
         data_indices = [
@@ -46,15 +59,55 @@ class NoaaDataset(data.Dataset):
             x = x[valid, :]
             y = y[valid, :]
 
+        if epoch_days:
+            times = x[:, 0]
+            if rotate_data:
+                max_ = np.max(times)
+                min_ = np.min(times)
+                center = (min_ + max_) / 2.
+                times = np.where(times < center, times + (max_ - min_), times)
+            self.compute_days(times, warm_epoch_days, epoch_days)
+
+        self.total_size = x.shape[0]
         self.x = torch.from_numpy(x).float()
         self.y = torch.from_numpy(y).float()
         self.data = np.array([])  # release memory
 
     def __getitem__(self, index):
-        return self.x[index, :], self.y[index, :]
+        if self.days:
+            index = self.days[self.day][index]
+        return self.x[index, 1:], self.y[index, :]
 
     def __len__(self):
+        if self.days:
+            return self.days[self.day].shape[0]
         return self.x.shape[0]
+
+    def compute_days(self, times, warm_epoch_days, epoch_days):
+        indices = np.argsort(times)
+        dt = (datetime.datetime(year=1981, month=1, day=2) -
+              datetime.datetime(year=1981, month=1, day=1)).total_seconds()
+
+        i = 0
+        t = np.min(times)
+        end = t + dt * warm_epoch_days
+        day_indices = []
+        while i < len(times) and times[indices[i]] < end:
+            day_indices.append(indices[i])
+            i += 1
+        days = self.days = [np.array(day_indices)]
+
+        t += dt * warm_epoch_days
+        dt *= epoch_days
+        while i < len(times):
+            day_indices = []
+            end = t + dt
+            while i < len(times) and times[indices[i]] < end:
+                day_indices.append(indices[i])
+                i += 1
+
+            days.append(np.array(day_indices))
+            t += dt
 
     def split_data(self, stage, data_split, split_fname):
         fname = join(dirname(cs6787.__file__), 'logs', split_fname)
