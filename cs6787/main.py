@@ -42,6 +42,9 @@ if __name__ == '__main__':
     parser.add_argument(
         '--rotate_data', dest='rotate_data', action='store_const', const=True,
         default=False, help='Whether to shift the train data halfway')
+    parser.add_argument(
+        '--cw_weight', type=float, default=0,
+        help='Factor to use for CW')
     args = parser.parse_args()
 
     train(args)

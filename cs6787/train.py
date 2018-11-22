@@ -12,6 +12,7 @@ from torch.autograd import Variable
 from tqdm import tqdm
 
 from cs6787.model import MLP
+from cs6787.optimizer import SGDCW
 from cs6787.load_data import NoaaDataset
 
 
@@ -107,7 +108,7 @@ def train_offline(args, net, train_loader, test_loader, log_fh):
 
 
 def train_online(args, net, train_loader, test_loader, day_log_fh, log_fh):
-    optimizer = optim.SGD(net.parameters(), lr=args.lr, momentum=0.9)
+    optimizer = SGDCW(net.parameters(), lr=args.lr, momentum=0.9)
     decay = (0.000003 / args.lr) ** (1. / args.epochs)
     scheduler = optim.lr_scheduler.ExponentialLR(optimizer, decay)
     criterion = nn.MSELoss()
@@ -151,16 +152,21 @@ def train_online(args, net, train_loader, test_loader, day_log_fh, log_fh):
         test_loader.dataset.day = day
         n_epochs = args.epochs_warm if not day else args.epochs
 
+        if day == 1:
+            if args.cw_weight:
+                for group in optimizer.param_groups:
+                    group['cw_weight'] = args.cw_weight
+
         for epoch in range(1, n_epochs + 1):
             scheduler.step(epoch - 1)
             n, tr_loss, tr_acc = train_epoch(
                 net, criterion, optimizer, train_loader, args)
+            n_test, tt_loss, tt_acc = test_epoch(
+                net, criterion, test_loader, args)
+
             print("Day {4}\tEpoch {0}:\tTrain Loss={1:.3f},\t"
                   "Train MSE={2:.3f},\tN={3}"
                   .format(epoch, tr_loss, tr_acc, n, day), end='')
-
-            n_test, tt_loss, tt_acc = test_epoch(
-                net, criterion, test_loader, args)
             print(",\tTest Loss={0:.3f},\tTest MSE={1:.3f},\tN={2}".
                   format(tt_loss, tt_acc, n_test))
 
