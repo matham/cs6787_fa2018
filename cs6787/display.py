@@ -10,7 +10,7 @@ matplotlib.rcParams.update({'font.size': 16})
 matplotlib.rcParams['savefig.dpi'] = 300
 
 root = '/home/matte/Desktop/cs6787_fa2018/cs6787/logs'
-name = 'day_test_log_full_11-22_00-17-43.csv'
+name = 'day_test_log_full_11-23_16-26-49.csv'
 
 with open(join(root, name)) as fh:
     reader = csv.reader(fh)

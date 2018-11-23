@@ -156,6 +156,7 @@ def train_online(args, net, train_loader, test_loader, day_log_fh, log_fh):
             if args.cw_weight:
                 for group in optimizer.param_groups:
                     group['cw_weight'] = args.cw_weight
+                    group['momentum'] = 0
 
         for epoch in range(1, n_epochs + 1):
             scheduler.step(epoch - 1)
