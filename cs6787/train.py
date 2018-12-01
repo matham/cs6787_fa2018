@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from os.path import join, dirname
 import time
+from functools import partial
 import sys
 
 import torch
@@ -14,6 +15,7 @@ from tqdm import tqdm
 from cs6787.model import MLP
 from cs6787.optimizer import SGDCW
 from cs6787.load_data import NoaaDataset
+from cs6787.model_ae import MLPAE
 
 
 def train(args):
@@ -24,7 +26,8 @@ def train(args):
         root=args.data, stage='train', predicted_features=predicted_features,
         include_invalid=args.include_invalid, epoch_days=args.epoch_days,
         warm_epoch_days=args.warm_epoch_days,
-        randomize_samples=args.randomize_samples, rotate_data=args.rotate_data)
+        randomize_samples=args.randomize_samples, rotate_data=args.rotate_data,
+        num_day_resample=args.num_day_resample, normalize=args.normalize)
     train_loader = data.DataLoader(
         train_set, batch_size=args.batch_size, shuffle=True, **kwargs)
     print('loaded train data')
@@ -35,32 +38,51 @@ def train(args):
         predicted_features=predicted_features,
         include_invalid=args.include_invalid, epoch_days=args.epoch_days,
         warm_epoch_days=args.warm_epoch_days,
-        randomize_samples=args.randomize_samples)
+        randomize_samples=args.randomize_samples, normalize=args.normalize,
+        norms=train_set.norms)
     test_loader = data.DataLoader(
         test_set, batch_size=args.batch_size, shuffle=True, **kwargs)
     print('loaded test data')
 
-    net = MLP(train_set.x.shape[1] - 1, train_set.y.shape[1])
+    cls = MLPAE if args.ae else MLP
+    net = cls(train_set.x.shape[1], train_set.y.shape[1],
+              num_units=args.num_hidden_units, n_layers=args.num_layers)
     print(net)
 
     if args.cuda:
         net.cuda()
 
     if not args.epoch_days:
+        test_stage = 'test' if args.test else 'val'
+        test_set_day = NoaaDataset(
+            root=args.data, stage=test_stage,
+            predicted_features=predicted_features,
+            include_invalid=args.include_invalid, epoch_days=args.epoch_days_test,
+            warm_epoch_days=args.warm_epoch_days,
+            randomize_samples=args.randomize_samples)
+        test_loader_day = data.DataLoader(
+            test_set_day, batch_size=args.batch_size, shuffle=True, **kwargs)
+        print('loaded test daily data')
+
         fname = time.strftime('log_%m-%d_%H-%M-%S.csv')
+        daily_fname = time.strftime('day_test_log_full_%m-%d_%H-%M-%S.csv')
         with open(join(dirname(__file__), 'logs', 'README.md'), 'a') as fh:
-            fh.write(fname)
-            fh.write('\n')
+            fh.write('{}, {}\n'.format(daily_fname, fname))
             fh.write(repr(args))
             fh.write('\n')
             fh.write(' '.join(sys.argv))
             fh.write('\n\n')
 
-        with open(join(dirname(__file__), 'logs', fname), 'w') as log_fh:
-            train_offline(args, net, train_loader, test_loader, log_fh)
+        with open(join(
+                dirname(__file__), 'logs', daily_fname), 'w') as day_log_fh:
+            with open(join(dirname(__file__), 'logs', fname), 'w') as log_fh:
+                train_offline(
+                    args, net, train_loader, test_loader, test_loader_day,
+                    log_fh, day_log_fh)
     else:
-        daily_fname = time.strftime('day_test_log_full_%m-%d_%H-%M-%S.csv')
-        fname = time.strftime('day_log_%m-%d_%H-%M-%S.csv')
+        units = '{}_{}'.format(bool(args.ae), args.num_day_resample)
+        daily_fname = time.strftime('day_test_log_full_%m-%d_%H-%M-%S_{}.csv'.format(units))
+        fname = time.strftime('day_log_%m-%d_%H-%M-%S_{}.csv'.format(units))
         with open(join(dirname(__file__), 'logs', 'README.md'), 'a') as fh:
             fh.write('{}, {}\n'.format(daily_fname, fname))
             fh.write(repr(args))
@@ -75,11 +97,51 @@ def train(args):
                     args, net, train_loader, test_loader, day_log_fh, log_fh)
 
 
-def train_offline(args, net, train_loader, test_loader, log_fh):
+def test_by_day(train_day, data_loader, net, criterion, args, day_log_fh):
+    res = [], [], []
+    tqdm_it = tqdm(
+        leave=False, unit='Samples', total=data_loader.dataset.total_size)
+
+    for day in range(len(data_loader.dataset.days)):
+        data_loader.dataset.day = day
+        n, tt_loss, tt_acc = test_epoch(
+            net, criterion, data_loader, args, tqdm_it)
+
+        res[2].append(n)
+        res[0].append(tt_loss)
+        res[1].append(tt_acc)
+
+    tqdm_it.close()
+
+    if train_day == -1:
+        day_log_fh.write('Day,{}{}{}\n'.format(
+            'Train Loss,' * len(res[1]), 'Train MSE,' * len(res[1]),
+            ('N,' * len(res[1]))[:-1]))
+    day_log_fh.write('{},{}\n'.format(
+        train_day, ','.join(
+            (','.join(map(str, v)) for v in res)
+        )
+    ))
+    day_log_fh.flush()
+
+
+def ae_loss(ae, pred_loss, recons_loss, output, target):
+    pred, recons = output
+    return pred_loss(pred, target[0]) + ae * recons_loss(recons, target[1])
+
+
+def train_offline(
+        args, net, train_loader, test_loader, test_loader_day, log_fh,
+        day_log_fh):
     optimizer = optim.SGD(net.parameters(), lr=args.lr, momentum=0.9)
     decay = (0.000003 / args.lr) ** (1. / args.epochs)
     scheduler = optim.lr_scheduler.ExponentialLR(optimizer, decay)
-    criterion = nn.MSELoss()
+    if args.ae:
+        criterion = partial(ae_loss, args.ae, nn.MSELoss(), nn.MSELoss())
+    else:
+        criterion = nn.MSELoss()
+
+    test_by_day(-1, test_loader_day, net, criterion, args, day_log_fh)
 
     n, tt_loss, tt_acc = test_epoch(net, criterion, test_loader, args)
     print("Test Loss={0:.3f}, Test MSE={1:.3f}, N={2}".format(
@@ -93,11 +155,11 @@ def train_offline(args, net, train_loader, test_loader, log_fh):
         scheduler.step(epoch - 1)
         n, tr_loss, tr_acc = train_epoch(
             net, criterion, optimizer, train_loader, args)
-        print("Epoch {0}:\tTrain Loss={1:.3f},\tTrain MSE={2:.3f},\tN={3}".
-              format(epoch, tr_loss, tr_acc, n), end='')
-
         n_test, tt_loss, tt_acc = test_epoch(
             net, criterion, test_loader, args)
+
+        print("Epoch {0}:\tTrain Loss={1:.3f},\tTrain MSE={2:.3f},\tN={3}".
+              format(epoch, tr_loss, tr_acc, n), end='')
         print(",\tTest Loss={0:.3f},\tTest MSE={1:.3f},\tN={2}".format(
             tt_loss, tt_acc, n_test))
 
@@ -106,38 +168,24 @@ def train_offline(args, net, train_loader, test_loader, log_fh):
                 epoch, tr_loss, tr_acc, n, tt_loss, tt_acc, n_test))
         log_fh.flush()
 
+        test_by_day(epoch, test_loader_day, net, criterion, args, day_log_fh)
+
 
 def train_online(args, net, train_loader, test_loader, day_log_fh, log_fh):
-    optimizer = SGDCW(net.parameters(), lr=args.lr, momentum=0.9)
+    if args.ae:
+        optimizer = optim.SGD(net.parameters(), lr=args.lr, momentum=0.9)
+    else:
+        optimizer = SGDCW(net.parameters(), lr=args.lr, momentum=0.9,
+                          use_kl_div=args.use_kl_div, use_last_loss=args.use_last_loss)
     decay = (0.000003 / args.lr) ** (1. / args.epochs)
     scheduler = optim.lr_scheduler.ExponentialLR(optimizer, decay)
-    criterion = nn.MSELoss()
+    if args.ae:
+        criterion = partial(ae_loss, args.ae, nn.MSELoss(), nn.MSELoss())
+    else:
+        criterion = nn.MSELoss()
 
-    res = [], [], []
-    tqdm_it = tqdm(
-        leave=False, unit='Samples', total=test_loader.dataset.total_size)
+    test_by_day(-1, test_loader, net, criterion, args, day_log_fh)
 
-    for day in range(len(test_loader.dataset.days)):
-        test_loader.dataset.day = day
-        n, tt_loss, tt_acc = test_epoch(
-            net, criterion, test_loader, args, tqdm_it)
-
-        res[2].append(n)
-        res[0].append(tt_loss)
-        res[1].append(tt_acc)
-
-    tqdm_it.close()
-    day_log_fh.write('Day,{}{}{}\n'.format(
-        'Train Loss,' * len(res[1]), 'Train MSE,' * len(res[1]),
-        ('N,' * len(res[1]))[:-1]))
-    day_log_fh.write('0,{}\n'.format(
-        ','.join(
-            (','.join(map(str, v)) for v in res)
-        )
-    ))
-    day_log_fh.flush()
-
-    test_loader.dataset.day = 0
     n, tt_loss, tt_acc = test_epoch(net, criterion, test_loader, args)
     print("Day 0\tTest Loss={0:.3f},Test MSE={1:.3f}, N={2}".format(
         tt_loss, tt_acc, n))
@@ -176,25 +224,7 @@ def train_online(args, net, train_loader, test_loader, day_log_fh, log_fh):
                     day, epoch, tr_loss, tr_acc, n, tt_loss, tt_acc, n_test))
             log_fh.flush()
 
-        res = [], [], []
-        tqdm_it = tqdm(
-            leave=False, unit='Samples', total=test_loader.dataset.total_size)
-        for day_ in range(len(test_loader.dataset.days)):
-            test_loader.dataset.day = day_
-            n, tt_loss, tt_acc = test_epoch(
-                net, criterion, test_loader, args, tqdm_it)
-
-            res[2].append(n)
-            res[0].append(tt_loss)
-            res[1].append(tt_acc)
-
-        tqdm_it.close()
-        day_log_fh.write('{},{}\n'.format(
-            day, ','.join(
-                (','.join(map(str, v)) for v in res)
-            )
-        ))
-        day_log_fh.flush()
+        test_by_day(day, test_loader, net, criterion, args, day_log_fh)
 
 
 def train_epoch(net, criterion, optimizer, train_loader, args):
@@ -203,6 +233,7 @@ def train_epoch(net, criterion, optimizer, train_loader, args):
     n = 0
     batch_idx = 1
     net.train()
+    ae = args.ae
     tqdm_it = tqdm(
         leave=False, unit='Samples', total=len(train_loader.dataset))
 
@@ -218,10 +249,12 @@ def train_epoch(net, criterion, optimizer, train_loader, args):
         optimizer.zero_grad()
 
         output = net(data)
-        loss = criterion(output, target)
+        loss = criterion(output, (target, data) if ae else target)
         loss.backward()
         optimizer.step()
 
+        if ae:
+            output = output[0]
         mse += torch.mean((output - target) ** 2).data.item()
         losses += loss.data.item()
 
@@ -237,6 +270,7 @@ def test_epoch(net, criterion, test_loader, args, tqdm_obj=None):
     mse = 0
     n = 0
     batch_idx = 1
+    ae = args.ae
 
     tqdm_it = tqdm_obj
     if tqdm_it is None:
@@ -253,8 +287,10 @@ def test_epoch(net, criterion, test_loader, args, tqdm_obj=None):
         data, target = Variable(data), Variable(target)
 
         output = net(data)
-        loss = criterion(output, target)
+        loss = criterion(output, (target, data) if ae else target)
 
+        if ae:
+            output = output[0]
         mse += torch.mean((output - target) ** 2).data.item()
         losses += loss.data.item()
 

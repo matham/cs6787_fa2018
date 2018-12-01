@@ -22,6 +22,8 @@ class NoaaDataset(data.Dataset):
 
     y = []
 
+    times = []
+
     stage_indices = []
 
     day = 0
@@ -30,11 +32,13 @@ class NoaaDataset(data.Dataset):
 
     total_size = 0
 
+    norms = None
+
     def __init__(
             self, root, stage, predicted_features, data_split=(.8, .1, .1),
             split_fname='split.npz', include_invalid=False, epoch_days=0,
             warm_epoch_days=0, randomize_samples=False, rotate_data=False,
-            **kwargs):
+            num_day_resample=0, normalize=False, norms=None, **kwargs):
         super(NoaaDataset, self).__init__(**kwargs)
         self.root = root
         self.load_all_hourly_data()
@@ -46,11 +50,15 @@ class NoaaDataset(data.Dataset):
             self.data[:, 0] = times
 
         pred_indices = [self.header.index(name) for name in predicted_features]
+        if 0 in pred_indices:
+            raise ValueError('Time cannot be predicted')
         data_indices = [
-            i for i in range(self.data.shape[1]) if i not in pred_indices]
+            i for i in range(1, self.data.shape[1]) if i not in pred_indices]
 
-        x = self.data[self.stage_indices, :][:, data_indices]
-        y = self.data[self.stage_indices, :][:, pred_indices]
+        stage_data = self.data[self.stage_indices, :]
+        x = stage_data[:, data_indices]
+        y = stage_data[:, pred_indices]
+        times = stage_data[:, 0]
 
         if not include_invalid:
             valid = np.logical_not(
@@ -58,32 +66,47 @@ class NoaaDataset(data.Dataset):
                     np.any(x == -9999., axis=1), np.any(y == -9999., axis=1)))
             x = x[valid, :]
             y = y[valid, :]
+            times = times[valid]
 
         if epoch_days:
-            times = x[:, 0]
             if rotate_data:
                 max_ = np.max(times)
                 min_ = np.min(times)
                 center = (min_ + max_) / 2.
                 times = np.where(times < center, times + (max_ - min_), times)
-            self.compute_days(times, warm_epoch_days, epoch_days)
+            self.compute_days(times, warm_epoch_days, epoch_days, num_day_resample)
+
+        x = torch.from_numpy(x).float()
+        y = torch.from_numpy(y).float()
+        if normalize:
+            if norms:
+                x_m, x_std, y_m, y_std = norms
+            else:
+                x_m = x.mean(dim=0)
+                x_std = x.std(dim=0)
+                y_m = y.mean(dim=0)
+                y_std = y.std(dim=0)
+                self.norms = x_m, x_std, y_m, y_std
+            x.sub_(x_m).div_(x_std)
+            y.sub_(y_m).div_(y_std)
 
         self.total_size = x.shape[0]
-        self.x = torch.from_numpy(x).float()
-        self.y = torch.from_numpy(y).float()
+        self.x = x
+        self.y = y
+        self.times = times
         self.data = np.array([])  # release memory
 
     def __getitem__(self, index):
         if self.days:
             index = self.days[self.day][index]
-        return self.x[index, 1:], self.y[index, :]
+        return self.x[index, :], self.y[index, :]
 
     def __len__(self):
         if self.days:
             return self.days[self.day].shape[0]
         return self.x.shape[0]
 
-    def compute_days(self, times, warm_epoch_days, epoch_days):
+    def compute_days(self, times, warm_epoch_days, epoch_days, num_day_resample):
         indices = np.argsort(times)
         dt = (datetime.datetime(year=1981, month=1, day=2) -
               datetime.datetime(year=1981, month=1, day=1)).total_seconds()
@@ -105,6 +128,13 @@ class NoaaDataset(data.Dataset):
             while i < len(times) and times[indices[i]] < end:
                 day_indices.append(indices[i])
                 i += 1
+
+            if num_day_resample:
+                for prev_day_indices in days:
+                    for j in np.random.randint(
+                        0, len(prev_day_indices),
+                            size=num_day_resample):
+                        day_indices.append(prev_day_indices[j])
 
             days.append(np.array(day_indices))
             t += dt
