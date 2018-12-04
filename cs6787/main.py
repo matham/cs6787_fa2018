@@ -72,6 +72,12 @@ if __name__ == '__main__':
     parser.add_argument(
         '--normalize', dest='normalize', action='store_const', const=True,
         default=False, help='Whether to normalize the data')
+    parser.add_argument(
+        '--vae', dest='vae', action='store_const', const=True,
+        default=False, help='Whether to use a VAE')
+    parser.add_argument(
+        '--log_subdir', type=str, default='',
+        help='Log subdirectory')
     args = parser.parse_args()
 
     train(args)

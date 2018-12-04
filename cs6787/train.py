@@ -52,6 +52,8 @@ def train(args):
     if args.cuda:
         net.cuda()
 
+    log_dir = join('logs', args.log_subdir) if args.log_subdir else 'logs'
+
     if not args.epoch_days:
         test_stage = 'test' if args.test else 'val'
         test_set_day = NoaaDataset(
@@ -74,8 +76,8 @@ def train(args):
             fh.write('\n\n')
 
         with open(join(
-                dirname(__file__), 'logs', daily_fname), 'w') as day_log_fh:
-            with open(join(dirname(__file__), 'logs', fname), 'w') as log_fh:
+                dirname(__file__), log_dir, daily_fname), 'w') as day_log_fh:
+            with open(join(dirname(__file__), log_dir, fname), 'w') as log_fh:
                 train_offline(
                     args, net, train_loader, test_loader, test_loader_day,
                     log_fh, day_log_fh)
@@ -91,8 +93,8 @@ def train(args):
             fh.write('\n\n')
 
         with open(join(
-                dirname(__file__), 'logs', daily_fname), 'w') as day_log_fh:
-            with open(join(dirname(__file__), 'logs', fname), 'w') as log_fh:
+                dirname(__file__), log_dir, daily_fname), 'w') as day_log_fh:
+            with open(join(dirname(__file__), log_dir, fname), 'w') as log_fh:
                 train_online(
                     args, net, train_loader, test_loader, day_log_fh, log_fh)
 
