@@ -2122,3 +2122,1551 @@ day_test_log_full_12-04_10-19-42_True_5.csv, day_log_12-04_10-19-42_True_5.csv
 Namespace(ae=2.1, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='5_samples_repeats_.05/2', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
 main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 2.1 --num_day_resample 5 --log_subdir 5_samples_repeats_.05/2
 
+day_test_log_full_12-04_21-24-35_False_0.csv, day_log_12-04_21-24-35_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-04_21-32-28_False_5.csv, day_log_12-04_21-32-28_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-04_21-33-22_False_0.csv, day_log_12-04_21-33-22_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result --test
+
+day_test_log_full_12-04_21-40-37_False_100.csv, day_log_12-04_21-40-37_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-04_21-47-22_False_5.csv, day_log_12-04_21-47-22_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result --test
+
+day_test_log_full_12-04_21-48-57_True_0.csv, day_log_12-04_21-48-57_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-04_21-56-54_True_5.csv, day_log_12-04_21-56-54_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae .645 --num_day_resample 5 --log_subdir test_result --test
+
+day_test_log_full_12-04_21-57-04_True_5.csv, day_log_12-04_21-57-04_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-04_22-06-02_True_100.csv, day_log_12-04_22-06-02_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-04_22-14-24_True_0.csv, day_log_12-04_22-14-24_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae .645 --num_day_resample 0 --log_subdir test_result --test
+
+day_test_log_full_12-04_22-15-09_False_0.csv, day_log_12-04_22-15-09_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-04_22-23-32_False_5.csv, day_log_12-04_22-23-32_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-04_22-28-58_False_0.csv, day_log_12-04_22-28-58_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0.1, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --cw .1 --num_day_resample 0 --log_subdir test_result --test
+
+day_test_log_full_12-04_22-29-54_False_0.csv, day_log_12-04_22-29-54_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0.1, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --cw_weight .1 --num_day_resample 0 --log_subdir test_result --test
+
+day_test_log_full_12-04_22-32-04_False_100.csv, day_log_12-04_22-32-04_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-04_22-39-54_False_5.csv, day_log_12-04_22-39-54_False_5.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0.1, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --cw_weight .1 --num_day_resample 5 --log_subdir test_result --test
+
+day_test_log_full_12-04_22-40-38_True_0.csv, day_log_12-04_22-40-38_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-04_22-49-50_True_5.csv, day_log_12-04_22-49-50_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-04_22-58-14_True_100.csv, day_log_12-04_22-58-14_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-04_23-01-30.csv, log_12-04_23-01-30.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=0, epoch_days_test=0, epochs=10, epochs_warm=5, include_invalid=False, log_subdir='test_result', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=180)
+main.py --cuda --epochs 10 --normalize --log_subdir test_result --test
+
+day_test_log_full_12-04_23-07-29_False_0.csv, day_log_12-04_23-07-29_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-04_23-16-02_False_5.csv, day_log_12-04_23-16-02_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-04_23-24-36_False_100.csv, day_log_12-04_23-24-36_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-04_23-32-12_True_0.csv, day_log_12-04_23-32-12_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-04_23-40-15.csv, log_12-04_23-40-15.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=0, epoch_days_test=10.0, epochs=10, epochs_warm=5, include_invalid=False, log_subdir='test_result', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=180)
+main.py --cuda --epochs 10 --normalize --log_subdir test_result --test --epoch_days_test 10
+
+day_test_log_full_12-04_23-41-20_True_5.csv, day_log_12-04_23-41-20_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-04_23-50-31_True_100.csv, day_log_12-04_23-50-31_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-04_23-59-05_False_0.csv, day_log_12-04_23-59-05_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_00-07-43_False_5.csv, day_log_12-05_00-07-43_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_00-13-30.csv, log_12-05_00-13-30.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=0, epoch_days_test=10.0, epochs=10, epochs_warm=5, include_invalid=False, log_subdir='test_result', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=180)
+main.py --cuda --epochs 10 --normalize --log_subdir test_result --test --epoch_days_test 10
+
+day_test_log_full_12-05_00-16-18_False_100.csv, day_log_12-05_00-16-18_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_00-23-46_True_0.csv, day_log_12-05_00-23-46_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_00-32-57_True_5.csv, day_log_12-05_00-32-57_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_00-42-15_True_100.csv, day_log_12-05_00-42-15_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_00-51-41_False_0.csv, day_log_12-05_00-51-41_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_01-00-45_False_5.csv, day_log_12-05_01-00-45_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_01-09-15_False_100.csv, day_log_12-05_01-09-15_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_01-18-02_True_0.csv, day_log_12-05_01-18-02_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_01-24-11_False_0.csv, day_log_12-05_01-24-11_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_01-24-43_False_0.csv, day_log_12-05_01-24-43_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_01-27-30_True_5.csv, day_log_12-05_01-27-30_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_01-31-35_False_5.csv, day_log_12-05_01-31-35_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_01-31-36_False_5.csv, day_log_12-05_01-31-36_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_01-36-15_True_100.csv, day_log_12-05_01-36-15_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_01-39-39_False_100.csv, day_log_12-05_01-39-39_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_01-39-50_False_100.csv, day_log_12-05_01-39-50_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_01-45-28_False_0.csv, day_log_12-05_01-45-28_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_01-47-09_True_0.csv, day_log_12-05_01-47-09_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_01-47-11_True_0.csv, day_log_12-05_01-47-11_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_01-54-09_False_5.csv, day_log_12-05_01-54-09_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_01-55-39_True_5.csv, day_log_12-05_01-55-39_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_01-55-58_True_5.csv, day_log_12-05_01-55-58_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_02-02-42_False_100.csv, day_log_12-05_02-02-42_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_02-04-39_True_100.csv, day_log_12-05_02-04-39_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_02-05-06_True_100.csv, day_log_12-05_02-05-06_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_02-11-25_True_0.csv, day_log_12-05_02-11-25_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_02-13-36_False_0.csv, day_log_12-05_02-13-36_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_02-14-16_False_0.csv, day_log_12-05_02-14-16_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_02-21-16_True_5.csv, day_log_12-05_02-21-16_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_02-21-27_False_5.csv, day_log_12-05_02-21-27_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_02-22-42_False_5.csv, day_log_12-05_02-22-42_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_02-30-08_False_100.csv, day_log_12-05_02-30-08_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_02-31-07_True_100.csv, day_log_12-05_02-31-07_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_02-31-22_False_100.csv, day_log_12-05_02-31-22_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_02-38-53_True_0.csv, day_log_12-05_02-38-53_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_02-40-10_True_0.csv, day_log_12-05_02-40-10_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_02-40-58_False_0.csv, day_log_12-05_02-40-58_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_02-48-26_True_5.csv, day_log_12-05_02-48-26_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_02-49-43_True_5.csv, day_log_12-05_02-49-43_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_02-49-51_False_5.csv, day_log_12-05_02-49-51_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_02-57-31_True_100.csv, day_log_12-05_02-57-31_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_02-58-08_True_100.csv, day_log_12-05_02-58-08_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_02-58-32_False_100.csv, day_log_12-05_02-58-32_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_03-06-51_False_0.csv, day_log_12-05_03-06-51_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_03-07-31_False_0.csv, day_log_12-05_03-07-31_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_03-07-52_True_0.csv, day_log_12-05_03-07-52_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_03-15-34_False_5.csv, day_log_12-05_03-15-34_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_03-15-49_False_5.csv, day_log_12-05_03-15-49_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_03-17-11_True_5.csv, day_log_12-05_03-17-11_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_03-24-05_False_100.csv, day_log_12-05_03-24-05_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_03-24-07_False_100.csv, day_log_12-05_03-24-07_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_03-26-11_True_100.csv, day_log_12-05_03-26-11_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_03-32-49_True_0.csv, day_log_12-05_03-32-49_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_03-32-49_True_0.csv, day_log_12-05_03-32-49_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_03-35-08_False_0.csv, day_log_12-05_03-35-08_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_03-42-34_True_5.csv, day_log_12-05_03-42-34_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_03-42-37_True_5.csv, day_log_12-05_03-42-37_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_03-43-28_False_5.csv, day_log_12-05_03-43-28_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_03-51-44_False_100.csv, day_log_12-05_03-51-44_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_03-52-10_True_100.csv, day_log_12-05_03-52-10_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_03-52-17_True_100.csv, day_log_12-05_03-52-17_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_04-00-15_True_0.csv, day_log_12-05_04-00-15_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_04-01-25_False_0.csv, day_log_12-05_04-01-25_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_04-02-08_False_0.csv, day_log_12-05_04-02-08_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_04-09-32_True_5.csv, day_log_12-05_04-09-32_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_04-09-33_False_5.csv, day_log_12-05_04-09-33_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_04-10-50_False_5.csv, day_log_12-05_04-10-50_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_04-17-53_False_100.csv, day_log_12-05_04-17-53_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_04-18-11_False_100.csv, day_log_12-05_04-18-11_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_04-18-55_True_100.csv, day_log_12-05_04-18-55_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_04-26-19_True_0.csv, day_log_12-05_04-26-19_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_04-26-40_True_0.csv, day_log_12-05_04-26-40_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_04-29-10_False_0.csv, day_log_12-05_04-29-10_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_04-35-29_True_5.csv, day_log_12-05_04-35-29_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_04-35-51_True_5.csv, day_log_12-05_04-35-51_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_04-37-56_False_5.csv, day_log_12-05_04-37-56_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_04-44-20_True_100.csv, day_log_12-05_04-44-20_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_04-44-55_True_100.csv, day_log_12-05_04-44-55_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_04-45-12_False_100.csv, day_log_12-05_04-45-12_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_04-52-59_True_0.csv, day_log_12-05_04-52-59_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_04-54-08_False_0.csv, day_log_12-05_04-54-08_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_04-54-24_False_0.csv, day_log_12-05_04-54-24_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_05-02-01_True_5.csv, day_log_12-05_05-02-01_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_05-02-47_False_5.csv, day_log_12-05_05-02-47_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_05-02-54_False_5.csv, day_log_12-05_05-02-54_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_05-11-21_False_100.csv, day_log_12-05_05-11-21_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_05-11-22_True_100.csv, day_log_12-05_05-11-22_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_05-11-36_False_100.csv, day_log_12-05_05-11-36_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_05-18-56_True_0.csv, day_log_12-05_05-18-56_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_05-19-54_True_0.csv, day_log_12-05_05-19-54_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_05-20-41_False_0.csv, day_log_12-05_05-20-41_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_05-28-29_True_5.csv, day_log_12-05_05-28-29_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_05-28-36_False_5.csv, day_log_12-05_05-28-36_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_05-29-40_True_5.csv, day_log_12-05_05-29-40_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_05-36-48_False_100.csv, day_log_12-05_05-36-48_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_05-37-52_True_100.csv, day_log_12-05_05-37-52_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_05-38-27_True_100.csv, day_log_12-05_05-38-27_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_05-45-32_True_0.csv, day_log_12-05_05-45-32_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_05-47-33_False_0.csv, day_log_12-05_05-47-33_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_05-47-44_False_0.csv, day_log_12-05_05-47-44_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_05-55-02_True_5.csv, day_log_12-05_05-55-02_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_05-56-04_False_5.csv, day_log_12-05_05-56-04_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_05-56-18_False_5.csv, day_log_12-05_05-56-18_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_06-04-43_False_100.csv, day_log_12-05_06-04-43_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_06-04-59_True_100.csv, day_log_12-05_06-04-59_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_06-04-59_False_100.csv, day_log_12-05_06-04-59_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_06-13-14_True_0.csv, day_log_12-05_06-13-14_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_06-13-15_True_0.csv, day_log_12-05_06-13-15_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_06-14-43_False_0.csv, day_log_12-05_06-14-43_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_06-22-43_True_5.csv, day_log_12-05_06-22-43_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_06-22-46_True_5.csv, day_log_12-05_06-22-46_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_06-23-35_False_5.csv, day_log_12-05_06-23-35_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_06-32-12_True_100.csv, day_log_12-05_06-32-12_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_06-32-17_True_100.csv, day_log_12-05_06-32-17_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_06-32-23_False_100.csv, day_log_12-05_06-32-23_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_06-40-36_True_0.csv, day_log_12-05_06-40-36_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_06-42-01_False_0.csv, day_log_12-05_06-42-01_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_06-42-07_False_0.csv, day_log_12-05_06-42-07_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_06-50-06_True_5.csv, day_log_12-05_06-50-06_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_06-50-42_False_5.csv, day_log_12-05_06-50-42_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_06-50-49_False_5.csv, day_log_12-05_06-50-49_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_06-59-04_False_100.csv, day_log_12-05_06-59-04_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_06-59-22_True_100.csv, day_log_12-05_06-59-22_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_06-59-26_False_100.csv, day_log_12-05_06-59-26_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_07-07-22_True_0.csv, day_log_12-05_07-07-22_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_07-07-41_True_0.csv, day_log_12-05_07-07-41_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_07-09-11_False_0.csv, day_log_12-05_07-09-11_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_07-16-57_True_5.csv, day_log_12-05_07-16-57_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_07-17-04_True_5.csv, day_log_12-05_07-17-04_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_07-17-54_False_5.csv, day_log_12-05_07-17-54_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_07-25-25_False_100.csv, day_log_12-05_07-25-25_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_07-26-19_True_100.csv, day_log_12-05_07-26-19_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_07-26-20_True_100.csv, day_log_12-05_07-26-20_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_07-33-04_True_0.csv, day_log_12-05_07-33-04_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_07-35-39_False_0.csv, day_log_12-05_07-35-39_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_07-35-57_False_0.csv, day_log_12-05_07-35-57_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_07-42-07_True_5.csv, day_log_12-05_07-42-07_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_07-43-07_False_5.csv, day_log_12-05_07-43-07_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_07-44-10_False_5.csv, day_log_12-05_07-44-10_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_07-51-24_False_100.csv, day_log_12-05_07-51-24_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_07-51-47_True_100.csv, day_log_12-05_07-51-47_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_07-51-55_False_100.csv, day_log_12-05_07-51-55_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_07-59-53_True_0.csv, day_log_12-05_07-59-53_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_08-00-10_True_0.csv, day_log_12-05_08-00-10_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_08-01-36_False_0.csv, day_log_12-05_08-01-36_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_08-09-12_True_5.csv, day_log_12-05_08-09-12_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_08-09-22_True_5.csv, day_log_12-05_08-09-22_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_08-10-21_False_5.csv, day_log_12-05_08-10-21_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_08-18-40_True_100.csv, day_log_12-05_08-18-40_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_08-18-46_True_100.csv, day_log_12-05_08-18-46_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_08-19-14_False_100.csv, day_log_12-05_08-19-14_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_08-27-33_False_0.csv, day_log_12-05_08-27-33_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_08-27-37_True_0.csv, day_log_12-05_08-27-37_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_08-27-59_False_0.csv, day_log_12-05_08-27-59_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_08-35-56_False_5.csv, day_log_12-05_08-35-56_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_08-36-15_False_5.csv, day_log_12-05_08-36-15_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_08-37-10_True_5.csv, day_log_12-05_08-37-10_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_08-44-08_False_100.csv, day_log_12-05_08-44-08_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_08-44-36_False_100.csv, day_log_12-05_08-44-36_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_08-46-33_True_100.csv, day_log_12-05_08-46-33_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_08-52-11_True_0.csv, day_log_12-05_08-52-11_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_08-52-42_True_0.csv, day_log_12-05_08-52-42_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_08-55-59_False_0.csv, day_log_12-05_08-55-59_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_09-01-23_True_5.csv, day_log_12-05_09-01-23_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_09-02-11_True_5.csv, day_log_12-05_09-02-11_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_09-04-36_False_5.csv, day_log_12-05_09-04-36_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_09-10-33_True_100.csv, day_log_12-05_09-10-33_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_09-11-53_True_100.csv, day_log_12-05_09-11-53_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_09-13-22_False_100.csv, day_log_12-05_09-13-22_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_09-20-00_False_0.csv, day_log_12-05_09-20-00_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_09-21-43_False_0.csv, day_log_12-05_09-21-43_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_09-22-16_True_0.csv, day_log_12-05_09-22-16_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_09-28-32_False_5.csv, day_log_12-05_09-28-32_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_09-30-36_False_5.csv, day_log_12-05_09-30-36_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_09-32-06_True_5.csv, day_log_12-05_09-32-06_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_09-37-08_False_100.csv, day_log_12-05_09-37-08_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_09-39-26_False_100.csv, day_log_12-05_09-39-26_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_09-41-47_True_100.csv, day_log_12-05_09-41-47_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_09-45-37_True_0.csv, day_log_12-05_09-45-37_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_09-47-44_True_0.csv, day_log_12-05_09-47-44_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_09-50-18_False_0.csv, day_log_12-05_09-50-18_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_09-53-51_True_5.csv, day_log_12-05_09-53-51_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_09-57-04_True_5.csv, day_log_12-05_09-57-04_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_09-58-53_False_5.csv, day_log_12-05_09-58-53_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_10-03-11_True_100.csv, day_log_12-05_10-03-11_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_10-06-02_True_100.csv, day_log_12-05_10-06-02_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_10-07-36_False_100.csv, day_log_12-05_10-07-36_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_10-12-17_False_0.csv, day_log_12-05_10-12-17_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_10-15-31_False_0.csv, day_log_12-05_10-15-31_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_10-16-26_True_0.csv, day_log_12-05_10-16-26_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_10-20-50_False_5.csv, day_log_12-05_10-20-50_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_10-24-02_False_5.csv, day_log_12-05_10-24-02_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_10-26-09_True_5.csv, day_log_12-05_10-26-09_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_10-29-10_False_100.csv, day_log_12-05_10-29-10_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_10-32-35_False_100.csv, day_log_12-05_10-32-35_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_10-35-43_True_100.csv, day_log_12-05_10-35-43_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_10-37-40_True_0.csv, day_log_12-05_10-37-40_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_10-41-23_True_0.csv, day_log_12-05_10-41-23_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_10-45-34_False_0.csv, day_log_12-05_10-45-34_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_10-46-57_True_5.csv, day_log_12-05_10-46-57_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_10-50-43_True_5.csv, day_log_12-05_10-50-43_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_10-54-16_False_5.csv, day_log_12-05_10-54-16_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_10-56-18_True_100.csv, day_log_12-05_10-56-18_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_10-59-58_True_100.csv, day_log_12-05_10-59-58_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_11-02-58_False_100.csv, day_log_12-05_11-02-58_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_11-05-53_False_0.csv, day_log_12-05_11-05-53_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_11-09-15_False_0.csv, day_log_12-05_11-09-15_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_11-11-50_True_0.csv, day_log_12-05_11-11-50_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_11-14-39_False_5.csv, day_log_12-05_11-14-39_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_11-17-38_False_5.csv, day_log_12-05_11-17-38_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_11-21-33_True_5.csv, day_log_12-05_11-21-33_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_11-23-27_False_100.csv, day_log_12-05_11-23-27_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_11-25-58_False_100.csv, day_log_12-05_11-25-58_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_11-31-16_True_100.csv, day_log_12-05_11-31-16_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_11-32-24_True_0.csv, day_log_12-05_11-32-24_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_11-34-27_True_0.csv, day_log_12-05_11-34-27_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_11-40-25_False_0.csv, day_log_12-05_11-40-25_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_11-42-00_True_5.csv, day_log_12-05_11-42-00_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_11-43-53_True_5.csv, day_log_12-05_11-43-53_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_11-48-53_False_5.csv, day_log_12-05_11-48-53_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_11-51-56_True_100.csv, day_log_12-05_11-51-56_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_11-53-29_True_100.csv, day_log_12-05_11-53-29_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_11-57-15_False_100.csv, day_log_12-05_11-57-15_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_12-01-53_False_0.csv, day_log_12-05_12-01-53_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_12-03-18_False_0.csv, day_log_12-05_12-03-18_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_12-05-46_True_0.csv, day_log_12-05_12-05-46_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_12-10-56_False_5.csv, day_log_12-05_12-10-56_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_12-12-03_False_5.csv, day_log_12-05_12-12-03_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_12-15-11_True_5.csv, day_log_12-05_12-15-11_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_12-19-54_False_100.csv, day_log_12-05_12-19-54_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_12-20-59_False_100.csv, day_log_12-05_12-20-59_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_12-24-38_True_100.csv, day_log_12-05_12-24-38_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_12-28-06_True_0.csv, day_log_12-05_12-28-06_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_12-28-30_True_0.csv, day_log_12-05_12-28-30_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_12-34-33_False_0.csv, day_log_12-05_12-34-33_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_12-37-20_True_5.csv, day_log_12-05_12-37-20_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_12-37-39_True_5.csv, day_log_12-05_12-37-39_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_12-43-22_False_5.csv, day_log_12-05_12-43-22_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_12-46-50_True_100.csv, day_log_12-05_12-46-50_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_12-46-58_True_100.csv, day_log_12-05_12-46-58_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_12-50-37_False_100.csv, day_log_12-05_12-50-37_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_12-56-20_False_0.csv, day_log_12-05_12-56-20_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_12-56-22_False_0.csv, day_log_12-05_12-56-22_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_12-59-07_True_0.csv, day_log_12-05_12-59-07_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_13-04-43_False_5.csv, day_log_12-05_13-04-43_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_13-04-57_False_5.csv, day_log_12-05_13-04-57_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_13-07-39_True_5.csv, day_log_12-05_13-07-39_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_13-12-51_False_100.csv, day_log_12-05_13-12-51_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_13-13-10_False_100.csv, day_log_12-05_13-13-10_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_13-16-59_True_100.csv, day_log_12-05_13-16-59_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_13-21-12_True_0.csv, day_log_12-05_13-21-12_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_13-21-40_True_0.csv, day_log_12-05_13-21-40_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_13-25-32_False_0.csv, day_log_12-05_13-25-32_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_13-30-39_True_5.csv, day_log_12-05_13-30-39_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_13-30-42_True_5.csv, day_log_12-05_13-30-42_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_13-33-57_False_5.csv, day_log_12-05_13-33-57_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_13-40-06_True_100.csv, day_log_12-05_13-40-06_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_13-40-21_True_100.csv, day_log_12-05_13-40-21_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_13-41-25_False_100.csv, day_log_12-05_13-41-25_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_13-49-11_True_0.csv, day_log_12-05_13-49-11_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_13-49-40_False_0.csv, day_log_12-05_13-49-40_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_13-50-20_False_0.csv, day_log_12-05_13-50-20_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_13-58-22_False_5.csv, day_log_12-05_13-58-22_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_13-58-25_True_5.csv, day_log_12-05_13-58-25_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_13-59-04_False_5.csv, day_log_12-05_13-59-04_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_14-06-58_False_100.csv, day_log_12-05_14-06-58_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_14-07-39_True_100.csv, day_log_12-05_14-07-39_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_14-07-48_False_100.csv, day_log_12-05_14-07-48_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_14-16-03_True_0.csv, day_log_12-05_14-16-03_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_14-16-27_True_0.csv, day_log_12-05_14-16-27_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_14-17-36_False_0.csv, day_log_12-05_14-17-36_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_14-25-55_True_5.csv, day_log_12-05_14-25-55_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_14-25-57_True_5.csv, day_log_12-05_14-25-57_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_14-26-26_False_5.csv, day_log_12-05_14-26-26_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_14-34-43_False_100.csv, day_log_12-05_14-34-43_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_14-35-26_True_100.csv, day_log_12-05_14-35-26_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_14-35-28_True_100.csv, day_log_12-05_14-35-28_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_14-43-38_True_0.csv, day_log_12-05_14-43-38_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0 --test
+
+day_test_log_full_12-05_14-45-13_False_0.csv, day_log_12-05_14-45-13_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_14-45-20_False_0.csv, day_log_12-05_14-45-20_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_14-53-24_True_5.csv, day_log_12-05_14-53-24_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5 --test
+
+day_test_log_full_12-05_14-53-38_False_5.csv, day_log_12-05_14-53-38_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_14-53-55_False_5.csv, day_log_12-05_14-53-55_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_15-02-05_False_100.csv, day_log_12-05_15-02-05_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_15-03-08_False_100.csv, day_log_12-05_15-03-08_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_15-03-23_True_100.csv, day_log_12-05_15-03-23_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100 --test
+
+day_test_log_full_12-05_15-10-43_True_0.csv, day_log_12-05_15-10-43_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_15-11-59_True_0.csv, day_log_12-05_15-11-59_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_15-20-12_True_5.csv, day_log_12-05_15-20-12_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_15-21-34_True_5.csv, day_log_12-05_15-21-34_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_15-29-31_True_100.csv, day_log_12-05_15-29-31_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_15-30-11_True_100.csv, day_log_12-05_15-30-11_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_15-38-54_False_0.csv, day_log_12-05_15-38-54_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_15-39-08_False_0.csv, day_log_12-05_15-39-08_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_15-47-32_False_5.csv, day_log_12-05_15-47-32_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_15-47-33_False_5.csv, day_log_12-05_15-47-33_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_15-56-03_False_100.csv, day_log_12-05_15-56-03_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_15-56-20_False_100.csv, day_log_12-05_15-56-20_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_16-03-16_False_0.csv, day_log_12-05_16-03-16_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/4_layers', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=4, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --log_subdir test_result/4_layers --test --num_layers 4
+
+day_test_log_full_12-05_16-04-24_True_0.csv, day_log_12-05_16-04-24_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_16-04-56_True_0.csv, day_log_12-05_16-04-56_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_16-11-54_False_0.csv, day_log_12-05_16-11-54_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/4_layers', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=4, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --log_subdir test_result/4_layers --test --num_layers 4
+
+day_test_log_full_12-05_16-12-30_True_5.csv, day_log_12-05_16-12-30_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_16-14-39_True_5.csv, day_log_12-05_16-14-39_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_16-21-17_False_0.csv, day_log_12-05_16-21-17_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/4_layers', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=4, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --log_subdir test_result/4_layers --test --num_layers 4
+
+day_test_log_full_12-05_16-21-40_True_100.csv, day_log_12-05_16-21-40_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_16-23-43_True_100.csv, day_log_12-05_16-23-43_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_16-30-43_False_0.csv, day_log_12-05_16-30-43_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/4_layers', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=4, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --log_subdir test_result/4_layers --test --num_layers 4
+
+day_test_log_full_12-05_16-31-22_False_0.csv, day_log_12-05_16-31-22_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_16-32-54_False_0.csv, day_log_12-05_16-32-54_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_16-39-05_False_5.csv, day_log_12-05_16-39-05_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_16-39-51_False_0.csv, day_log_12-05_16-39-51_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/4_layers', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=4, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --log_subdir test_result/4_layers --test --num_layers 4
+
+day_test_log_full_12-05_16-41-26_False_5.csv, day_log_12-05_16-41-26_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_16-47-10_False_100.csv, day_log_12-05_16-47-10_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_16-48-58_False_0.csv, day_log_12-05_16-48-58_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/4_layers', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=4, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --log_subdir test_result/4_layers --test --num_layers 4
+
+day_test_log_full_12-05_16-49-55_False_100.csv, day_log_12-05_16-49-55_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_16-55-33_True_0.csv, day_log_12-05_16-55-33_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_16-57-45_False_0.csv, day_log_12-05_16-57-45_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/4_layers', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=4, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --log_subdir test_result/4_layers --test --num_layers 4
+
+day_test_log_full_12-05_16-58-32_True_0.csv, day_log_12-05_16-58-32_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_17-05-10_True_5.csv, day_log_12-05_17-05-10_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_17-07-12_False_0.csv, day_log_12-05_17-07-12_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/4_layers', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=4, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --log_subdir test_result/4_layers --test --num_layers 4
+
+day_test_log_full_12-05_17-08-18_True_5.csv, day_log_12-05_17-08-18_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_17-15-09_True_100.csv, day_log_12-05_17-15-09_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_17-16-26_False_0.csv, day_log_12-05_17-16-26_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/4_layers', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=4, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --log_subdir test_result/4_layers --test --num_layers 4
+
+day_test_log_full_12-05_17-18-00_True_100.csv, day_log_12-05_17-18-00_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_17-24-46_False_0.csv, day_log_12-05_17-24-46_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_17-25-35_False_0.csv, day_log_12-05_17-25-35_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/4_layers', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=4, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --log_subdir test_result/4_layers --test --num_layers 4
+
+day_test_log_full_12-05_17-27-50_False_0.csv, day_log_12-05_17-27-50_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_17-33-29_False_5.csv, day_log_12-05_17-33-29_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_17-34-49_False_0.csv, day_log_12-05_17-34-49_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/4_layers', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=4, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --log_subdir test_result/4_layers --test --num_layers 4
+
+day_test_log_full_12-05_17-36-43_False_5.csv, day_log_12-05_17-36-43_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_17-42-17_False_100.csv, day_log_12-05_17-42-17_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_17-44-11_False_0.csv, day_log_12-05_17-44-11_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/4_layers', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=4, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --log_subdir test_result/4_layers --test --num_layers 4
+
+day_test_log_full_12-05_17-45-33_False_100.csv, day_log_12-05_17-45-33_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_17-51-11_True_0.csv, day_log_12-05_17-51-11_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_17-53-38_False_0.csv, day_log_12-05_17-53-38_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/4_layers', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=4, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --log_subdir test_result/4_layers --test --num_layers 4
+
+day_test_log_full_12-05_17-54-20_True_0.csv, day_log_12-05_17-54-20_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_18-01-03_True_5.csv, day_log_12-05_18-01-03_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_18-03-06_False_0.csv, day_log_12-05_18-03-06_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/4_layers', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=4, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --log_subdir test_result/4_layers --test --num_layers 4
+
+day_test_log_full_12-05_18-04-14_True_5.csv, day_log_12-05_18-04-14_True_5.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_18-10-38_True_100.csv, day_log_12-05_18-10-38_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_18-12-10_False_0.csv, day_log_12-05_18-12-10_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/4_layers', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=4, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --log_subdir test_result/4_layers --test --num_layers 4
+
+day_test_log_full_12-05_18-13-57_True_100.csv, day_log_12-05_18-13-57_True_100.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_18-19-19_False_0.csv, day_log_12-05_18-19-19_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_18-21-40_False_0.csv, day_log_12-05_18-21-40_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/4_layers', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=4, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --log_subdir test_result/4_layers --test --num_layers 4
+
+day_test_log_full_12-05_18-23-45_False_0.csv, day_log_12-05_18-23-45_False_0.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_18-27-44_False_5.csv, day_log_12-05_18-27-44_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_18-31-03_False_0.csv, day_log_12-05_18-31-03_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/4_layers', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=4, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --log_subdir test_result/4_layers --test --num_layers 4
+
+day_test_log_full_12-05_18-31-35_False_5.csv, day_log_12-05_18-31-35_False_5.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/5', lr=0.001, normalize=True, num_day_resample=5, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 5 --log_subdir test_result/5
+
+day_test_log_full_12-05_18-36-36_False_100.csv, day_log_12-05_18-36-36_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_18-40-08_False_100.csv, day_log_12-05_18-40-08_False_100.csv
+Namespace(ae=0.0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/100', lr=0.001, normalize=True, num_day_resample=100, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0 --num_day_resample 100 --log_subdir test_result/100
+
+day_test_log_full_12-05_18-40-47_False_0.csv, day_log_12-05_18-40-47_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/4_layers', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=4, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --log_subdir test_result/4_layers --test --num_layers 4
+
+day_test_log_full_12-05_18-45-30_True_0.csv, day_log_12-05_18-45-30_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_18-48-44_True_0.csv, day_log_12-05_18-48-44_True_0.csv
+Namespace(ae=0.645, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/0', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=False, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --ae 0.645 --num_day_resample 0 --log_subdir test_result/0
+
+day_test_log_full_12-05_18-50-30_False_0.csv, day_log_12-05_18-50-30_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/4_layers', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=4, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --log_subdir test_result/4_layers --test --num_layers 4
+
+day_test_log_full_12-05_18-59-59_False_0.csv, day_log_12-05_18-59-59_False_0.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=10.0, epoch_days_test=0, epochs=2, epochs_warm=10, include_invalid=False, log_subdir='test_result/4_layers', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=4, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 2 --epoch_days 10 --warm_epoch_days 30 --epochs_warm 10 --normalize --log_subdir test_result/4_layers --test --num_layers 4
+
+day_test_log_full_12-05_20-14-17.csv, log_12-05_20-14-17.csv
+Namespace(ae=0, batch_size=200, cuda=True, cw_weight=0, data='', epoch_days=0, epoch_days_test=10.0, epochs=10, epochs_warm=5, include_invalid=False, log_subdir='test_result', lr=0.001, normalize=True, num_day_resample=0, num_hidden_units=512, num_layers=2, predicted_features='temp-10pctl,temp-90pctl,temp-normal', randomize_samples=False, rotate_data=False, test=True, use_kl_div=False, use_last_loss=False, vae=False, warm_epoch_days=30.0)
+main.py --cuda --epochs 10 --normalize --log_subdir test_result --test --epoch_days_test 10 --warm_epoch_days 30
+

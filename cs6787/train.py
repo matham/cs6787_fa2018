@@ -61,7 +61,8 @@ def train(args):
             predicted_features=predicted_features,
             include_invalid=args.include_invalid, epoch_days=args.epoch_days_test,
             warm_epoch_days=args.warm_epoch_days,
-            randomize_samples=args.randomize_samples)
+            randomize_samples=args.randomize_samples, normalize=args.normalize,
+            norms=train_set.norms)
         test_loader_day = data.DataLoader(
             test_set_day, batch_size=args.batch_size, shuffle=True, **kwargs)
         print('loaded test daily data')
